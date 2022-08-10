@@ -1,0 +1,23 @@
+.search-and-created {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.user-form-button {
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(248, 87, 15, 1),
+    rgba(236, 125, 44, 1),
+    rgba(248, 87, 15, 1)
+  );
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem;
+  font-size: medium;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
