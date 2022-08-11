@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Kruger Test Kanteritas Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Live demo Link
+[https://kruger-test-frontend-react.vercel.app/](https://kruger-test-frontend-react.vercel.app/)
 
-## Available Scripts
+### Instalación
 
-In the project directory, you can run:
+    git clone https://github.com/leopacheco18/kruger-test-frontend-react.git
+    cd kruger-test-frontend-react
+    npm install
+    npm start
+    
+### Como usar?
+##### Video demostrativo
+[https://www.youtube.com/watch?v=EfhL-uKXmpg&feature=youtu.be](https://www.youtube.com/watch?v=EfhL-uKXmpg&feature=youtu.be)
+##### Acceso del Administrador
 
-### `npm start`
+- Usuario: lpacheco
+- Clave: 123*
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##### Crear nuevo empleado
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Ingresar como Administrador
+2. Agregar nuevo usuario
+3. Llenar el formulario
+4. Agregar.
+5. El empleado sera notificado al correo que hayamos ingresado con su usuario y clave, es importante que el correo exista.
 
-### `npm test`
+##### Cerrar sesion
+1. Presionar el boton naranja que se encuentra en la esquina inferior derecha
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##### Ver y Actualizar datos como empleado 
+1. Ingrear como Empleado
+2. La primera interfaz que nos muestra son los datos del empleado
+3. En la esquina superior izquierda de la infomación nos aparece un icono de lapiz
+4. Dar click en el icono de lapiz
+5. Podemos editar la dirección, telefono, fecha de nacimiento y el estado de vacuna
+6. Al activar el estado de vacuna podemos llena la información del tipo de vacuna, fecha de vacuna y la dosis, estos campos son obligatorios.
+7. Procedemos a cerrar sesión
 
-### `npm run build`
+##### Filtrar datos de empleados
+1. Ingresar como administrador
+2. Tenemos 4 filtros: Busqueda por texto, estado de vacunación, tipo de vacuna y fecha de vacunación
+3. Los filtros se actualizan a tiempo real conforme se vaya seleccionando alguno de los campos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Tecnologias Utilizadas
+##### Frontend: 
+- Host: Vercel
+- Framework/Lenguaje : React/JavaScript
+- Framework Css: AntDesign
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### Backend:
+- Host: Heroku
+- Framework/Lenguaje : Laravel 8 / PHP
+- Libreria de autentificación: JWT
+- DB: MySQL
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Repositorio Backend
+[https://github.com/leopacheco18/kruger-test-backend-laravel](https://github.com/leopacheco18/kruger-test-backend-laravel)
