@@ -117,8 +117,7 @@ const FormUser = ({ handleChange, userSelected, reloadUser }) => {
         />
       </Form.Item>
       <button type="submit" className="user-form-button">
-        {" "}
-        {userSelected.id_user ? "Editar" : "Crear"}{" "}
+        {userSelected.id_user ? "Editar" : "Crear"}
       </button>
     </Form>
   );

@@ -21,3 +21,32 @@
   width: 100%;
   cursor: pointer;
 }
+
+.filter-container{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.filter-container > div {
+  width: 32% ;
+}
+
+.ant-table-wrapper{
+  overflow: auto !important;
+}
+
+
+@media (max-width: 800px) {
+  .filter-container > div {
+    width: 100% ;
+    margin: 5px 0;
+  }
+  .search-and-created {
+
+    flex-wrap: wrap;
+  }
+  .search-and-created > button {
+    width: 100%;
+  }
+}

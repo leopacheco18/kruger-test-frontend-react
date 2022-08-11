@@ -45,3 +45,10 @@
 .login-kruger-logo > img{
     width: 70%;
 }
+
+@media (max-width: 800px) {
+  .card-login {
+    width: 80%;
+    padding: 2rem;
+  }
+}
