@@ -10,6 +10,7 @@ import {
 } from "antd";
 import React, { useEffect, useState } from "react";
 import useHttp from "../../hooks/useHttp";
+import Loading from "../global/Loading";
 import FormUser from "./FormUser";
 
 const initialUser = {
@@ -184,6 +185,7 @@ const CrudUser = () => {
 
   return (
     <div>
+    {isLoading && <Loading />}
       <h2>Usuarios</h2>
       <div className="search-and-created">
         <Input.Search

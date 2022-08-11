@@ -1,6 +1,7 @@
 import { Input, message, Select, Switch } from "antd";
 import React, { useEffect, useState } from "react";
 import useHttp from "../../hooks/useHttp";
+import Loading from "../global/Loading";
 
 const EditView = ({ user, handleChange, changeView }) => {
   const [vaccineList, setVaccineList] = useState([]);
@@ -63,6 +64,7 @@ const EditView = ({ user, handleChange, changeView }) => {
 
   return (
     <>
+    {isLoading && <Loading />}
       <h1>Editar</h1>
       <div className="profile-card-row">
         <h3>

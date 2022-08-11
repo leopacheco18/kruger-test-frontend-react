@@ -6,6 +6,7 @@ import {
   EyeOutlined ,
 } from "@ant-design/icons";
 import useHttp from "../../hooks/useHttp";
+import Loading from "../global/Loading";
 
 const LoginForm = () => {
   const [formInfo, setFormInfo] = useState({
@@ -47,6 +48,7 @@ const LoginForm = () => {
     <Form layout="vertical" 
     onFinish={handleSubmit}
     autoComplete="off">
+      {isLoading && <Loading />}
       <Form.Item label="Usuario" 
         rules={[{ required: true, message: 'Usuario es obligatorio' }]} 
         name="user">

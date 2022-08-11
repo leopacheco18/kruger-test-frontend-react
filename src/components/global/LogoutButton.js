@@ -3,6 +3,7 @@ import { LogoutOutlined } from '@ant-design/icons';
 import useHttp from '../../hooks/useHttp';
 import { message } from 'antd';
 import { useNavigate } from "react-router-dom";
+import Loading from './Loading';
 
 
 const LogoutButton = () => {
@@ -27,6 +28,7 @@ const LogoutButton = () => {
 
   return (
     <div className='logout-button' onClick={logout}>
+    {isLoading && <Loading />}
         <LogoutOutlined />
     </div>
   )

@@ -2,6 +2,7 @@ import { Form, Input, message } from "antd";
 import React from "react";
 import { IdcardOutlined, UserOutlined, MailOutlined } from "@ant-design/icons";
 import useHttp from "../../hooks/useHttp";
+import Loading from "../global/Loading";
 const FormUser = ({ handleChange, userSelected, reloadUser }) => {
   const { isLoading, request } = useHttp();
 
@@ -65,6 +66,7 @@ const FormUser = ({ handleChange, userSelected, reloadUser }) => {
 
   return (
     <Form layout="vertical" onFinish={handleSubmit}>
+    {isLoading && <Loading />}
       {userSelected.user && (
         <Form.Item label="Usuario" required>
           <Input
