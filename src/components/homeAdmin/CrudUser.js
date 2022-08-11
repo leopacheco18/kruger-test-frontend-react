@@ -59,6 +59,27 @@ const CrudUser = () => {
       key: "user",
     },
     {
+      title: "Vacunado",
+      dataIndex: "isVaccinated",
+      key: "isVaccinated",
+      render: text => <>{text === 1 ? 'Si' : 'No'}</>,
+    },
+    {
+      title: "Fecha",
+      key: "vaccine-date",
+      render: (_, record) => (<>{record.vaccine.date}</>)
+    },
+    {
+      title: "Tipo De Vacuna",
+      key: "vaccine-type",
+      render: (_, record) => (<>{record.vaccine.name}</>)
+    },
+    {
+      title: "Dosis",
+      key: "vaccine-dose",
+      render: (_, record) => (<>{record.vaccine.dose > 0 && record.vaccine.dose}</>)
+    },
+    {
       title: "Acción",
       key: "action",
       render: (_, record) => (
@@ -161,7 +182,7 @@ const CrudUser = () => {
     let dataToShow = userList.filter((user) => {
       let exist = false;
       columns.forEach((column) => {
-        if (user[column.key] && user[column.key].includes(val)) {
+        if (user[column.key] && isNaN(user[column.key]) && user[column.key].includes(val)) {
           exist = true;
         }
       });

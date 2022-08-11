@@ -1,6 +1,6 @@
 import { Form, Input, message } from "antd";
 import React from "react";
-import { IdcardOutlined, UserOutlined, MailOutlined } from "@ant-design/icons";
+import { IdcardOutlined, UserOutlined, MailOutlined, MobileOutlined, PushpinOutlined , ContactsOutlined} from "@ant-design/icons";
 import useHttp from "../../hooks/useHttp";
 import Loading from "../global/Loading";
 const FormUser = ({ handleChange, userSelected, reloadUser }) => {
@@ -75,6 +75,39 @@ const FormUser = ({ handleChange, userSelected, reloadUser }) => {
             defaultValue={userSelected?.user}
             disabled
             addonBefore={<UserOutlined />}
+          />
+        </Form.Item>
+      )}
+      
+      {userSelected.phone && (
+        <Form.Item label="Teléfono" required>
+          <Input
+            type="text"
+            defaultValue={userSelected.phone}
+            disabled
+            addonBefore={<MobileOutlined />}
+          />
+        </Form.Item>
+      )}
+      
+      {userSelected.address && (
+        <Form.Item label="Dirección" required>
+          <Input
+            type="text"
+            defaultValue={userSelected.address}
+            disabled
+            addonBefore={<PushpinOutlined />}
+          />
+        </Form.Item>
+      )}
+      
+      {userSelected.birthday && (
+        <Form.Item label="Fecha de Nacimiento" required>
+          <Input
+            type="datetime"
+            defaultValue={userSelected.birthday}
+            disabled
+            addonBefore={<ContactsOutlined />}
           />
         </Form.Item>
       )}

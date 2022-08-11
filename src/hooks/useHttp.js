@@ -33,6 +33,8 @@ const useHttp = () => {
         localStorage.clear();
         message.error("Su sesión ha caducado.");
         navigate("/");
+      }else{
+        message.error("Algo salio mal, intentalo de nuevo.");
       }
     }
   };

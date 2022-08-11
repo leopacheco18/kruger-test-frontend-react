@@ -57,7 +57,7 @@ const LoginForm = () => {
           type="text"
           name="user"
           onChange={handleChange}
-          placeholder="user..."
+          placeholder="Usuario..."
           addonBefore={<UserOutlined />}
         />
       </Form.Item>
